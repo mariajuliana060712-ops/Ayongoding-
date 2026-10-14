@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayo Ngoding! - akademi pemrograman yang ramah bagi pemula.">
+  <title>Ayo Ngoding!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#gallery" class="logo" data-nav="gallery" aria-label="Ayo Ngoding! - ke Gallery">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">Ayo<span class="logo-accent">Ngoding!</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#gallery" class="nav-link" data-nav="gallery">Gallery</a>
+        <a href="#pendaftaran" class="nav-link" data-nav="pendaftaran">Pendaftaran</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ TAMPILAN 1: GALLERY ============ -->
+    <section id="view-gallery" class="view" aria-labelledby="galleryTitle">
+      <div class="hero">
+        <div class="container hero-inner">
+          <p class="hero-badge">Akademi Pemrograman untuk Pemula</p>
+          <h1 id="galleryTitle">Belajar Coding dari Nol, <span class="hero-highlight">Bersama Ayo Ngoding!</span></h1>
+          <p class="hero-sub">Lihat dokumentasi kegiatan pelatihan kami: dari dasar HTML hingga presentasi proyek akhir. Siap menjadi bagian berikutnya?</p>
+          <a href="#pendaftaran" class="btn btn-primary btn-lg" data-nav="pendaftaran">Daftar Sekarang</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="section-title">Gallery Kegiatan</h2>
+        <p class="section-sub">Dokumentasi kegiatan pelatihan Ayo Ngoding!</p>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=70"
+                   alt="Peserta mempelajari kode HTML dan CSS di layar komputer"
+                   data-fallback="HTML &amp; CSS" data-color="#2563eb" loading="lazy">
+              <span class="card-tag">HTML &amp; CSS</span>
+            </div>
+            <div class="card-body">
+              <h3>Pelatihan HTML dan CSS</h3>
+              <p>Peserta mempelajari dasar pembuatan struktur dan desain website.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> struktur halaman, tag semantik, styling, layout responsif.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=70"
+                   alt="Peserta belajar membuat website interaktif dengan JavaScript"
+                   data-fallback="JavaScript" data-color="#7c3aed" loading="lazy">
+              <span class="card-tag">JavaScript</span>
+            </div>
+            <div class="card-body">
+              <h3>Workshop JavaScript</h3>
+              <p>Peserta belajar membuat website interaktif menggunakan JavaScript.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> manipulasi DOM, event, validasi form, penyimpanan data.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=70"
+                   alt="Peserta berlatih dasar pemrograman Python dan logika algoritma"
+                   data-fallback="Python" data-color="#0ea5e9" loading="lazy">
+              <span class="card-tag">Python</span>
+            </div>
+            <div class="card-body">
+              <h3>Pelatihan Python</h3>
+              <p>Peserta mengenal dasar pemrograman Python dan logika algoritma.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> variabel, percabangan, perulangan, fungsi, berpikir algoritmik.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=70"
+                   alt="Peserta mempraktikkan pembuatan website dari awal hingga selesai di laptop"
+                   data-fallback="Web Bootcamp" data-color="#1e3a8a" loading="lazy">
+              <span class="card-tag">Bootcamp</span>
+            </div>
+            <div class="card-body">
+              <h3>Web Development Bootcamp</h3>
+              <p>Peserta mempraktikkan pembuatan website dari awal hingga selesai.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> perencanaan proyek, front-end, debugging, deployment dasar.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=70"
+                   alt="Sekelompok peserta berdiskusi dan bekerja sama menyelesaikan masalah pemrograman"
+                   data-fallback="Kerja Kelompok" data-color="#6d28d9" loading="lazy">
+              <span class="card-tag">Teamwork</span>
+            </div>
+            <div class="card-body">
+              <h3>Diskusi dan Kerja Kelompok</h3>
+              <p>Peserta bekerja sama menyelesaikan permasalahan pemrograman.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> kolaborasi, pemecahan masalah, code review, komunikasi tim.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=70"
+                   alt="Peserta mempresentasikan hasil proyek di depan kelas"
+                   data-fallback="Presentasi Project" data-color="#2563eb" loading="lazy">
+              <span class="card-tag">Presentasi</span>
+            </div>
+            <div class="card-body">
+              <h3>Presentasi Project</h3>
+              <p>Peserta mempresentasikan hasil proyek yang telah dibuat selama pelatihan.</p>
+              <p class="card-skill"><strong>Keterampilan:</strong> public speaking, demo produk, menjelaskan alur kode, menerima masukan.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="cta-box">
+          <h3>Tertarik bergabung?</h3>
+          <p>Isi formulir pendaftaran, hanya butuh satu menit.</p>
+          <a href="#pendaftaran" class="btn btn-primary" data-nav="pendaftaran">Daftar Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TAMPILAN 2: PENDAFTARAN ============ -->
+    <section id="view-pendaftaran" class="view" hidden aria-labelledby="formTitle">
+      <div class="container narrow">
+        <h2 id="formTitle" class="section-title">Formulir Pendaftaran Coding Academy</h2>
+        <p class="section-sub">Lengkapi data berikut. Semua kolom wajib diisi.</p>
+
+        <div id="formAlert" class="alert alert-error" role="alert" hidden></div>
+
+        <form id="registrationForm" class="form-card" novalidate autocomplete="off">
+
+          <div class="form-group">
+            <label for="nik">NIK</label>
+            <input type="text" id="nik" name="nik" inputmode="numeric" maxlength="16"
+                   placeholder="16 digit angka" aria-describedby="nikError">
+            <small class="hint">Tepat 16 digit angka.</small>
+            <small class="error-msg" id="nikError" role="alert"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama sesuai identitas" aria-describedby="namaError">
+            <small class="error-msg" id="namaError" role="alert"></small>
+          </div>
+
+          <div class="form-group">
+            <span class="label" id="genderLabel">Jenis Kelamin</span>
+            <div class="radio-group" role="radiogroup" aria-labelledby="genderLabel">
+              <label class="radio-option">
+                <input type="radio" name="gender" value="Laki-laki">
+                <span>Laki-laki</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="Perempuan">
+                <span>Perempuan</span>
+              </label>
+            </div>
+            <small class="error-msg" id="genderError" role="alert"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="hp">Nomor HP</label>
+            <input type="tel" id="hp" name="hp" inputmode="tel" maxlength="20"
+                   placeholder="Contoh: 081234567890" aria-describedby="hpError">
+            <small class="hint">Format: 08xxxxxxxxxx, 628xxxxxxxxxx, atau +628xxxxxxxxxx.</small>
+            <small class="error-msg" id="hpError" role="alert"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Alamat lengkap (jalan, kota, provinsi)" aria-describedby="alamatError"></textarea>
+            <small class="error-msg" id="alamatError" role="alert"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="bahasa">Bahasa Pemrograman yang Diminati</label>
+            <select id="bahasa" name="bahasa" aria-describedby="bahasaError">
+              <option value="">-- Pilih salah satu --</option>
+              <option value="HTML dan CSS">HTML dan CSS</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="PHP">PHP</option>
+              <option value="C++">C++</option>
+              <option value="C#">C#</option>
+              <option value="Kotlin">Kotlin</option>
+              <option value="Belum Menentukan">Belum Menentukan</option>
+            </select>
+            <small class="error-msg" id="bahasaError" role="alert"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Simpan Pendaftaran</button>
+            <button type="button" class="btn btn-outline" id="resetBtn">Reset Formulir</button>
+          </div>
+        </form>
+
+        <p class="privacy-note">
+          <strong>Catatan:</strong> Ini adalah proyek demonstrasi. Data disimpan di <code>localStorage</code> browser Anda
+          dan bukan database yang aman. Jangan memasukkan NIK atau data pribadi asli.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TAMPILAN 3: HASIL ============ -->
+    <section id="view-hasil" class="view" hidden aria-labelledby="resultTitle">
+      <div class="container narrow">
+        <div class="result-card">
+          <div class="result-icon" aria-hidden="true">&#10003;</div>
+          <h2 id="resultTitle" tabindex="-1">Pendaftaran Berhasil!</h2>
+          <p class="section-sub">Berikut data yang Anda daftarkan:</p>
+
+          <dl class="result-list">
+            <div class="result-row"><dt>NIK</dt><dd id="outNik"></dd></div>
+            <div class="result-row"><dt>Nama Lengkap</dt><dd id="outNama"></dd></div>
+            <div class="result-row"><dt>Jenis Kelamin</dt><dd id="outGender"></dd></div>
+            <div class="result-row"><dt>Nomor HP</dt><dd id="outHp"></dd></div>
+            <div class="result-row"><dt>Alamat</dt><dd id="outAlamat"></dd></div>
+            <div class="result-row"><dt>Bahasa Pemrograman yang Diminati</dt><dd id="outBahasa"></dd></div>
+          </dl>
+
+          <p class="result-meta" id="outMeta"></p>
+
+          <div class="form-actions">
+            <a href="#gallery" class="btn btn-outline" data-nav="gallery">Kembali ke Gallery</a>
+            <button type="button" class="btn btn-primary" id="anotherBtn">Daftar Peserta Lain</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Coding Academy. Belajar coding dengan menyenangkan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
